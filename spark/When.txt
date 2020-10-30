@@ -1,0 +1,1 @@
+df_final.withColumn('PAGINADO', when((col('index') >= cantidad_min) & (col('index') <= cantidad_max), 'PAGINA1').otherwise('PAGINA2')).show()
