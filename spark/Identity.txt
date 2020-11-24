@@ -1,0 +1,5 @@
+from pyspark.sql.functions import monotonically_increasing_id
+from pyspark.sql import Window
+
+window = Window.orderBy(F.monotonically_increasing_id())
+df_current_tbl_data_lake_wt_index = prm_df_current_tbl_data_lake.withColumn('indice', F.row_number().over(window))
