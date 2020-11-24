@@ -1,0 +1,2 @@
+value = [i for i in range(init_value , end_value)]
+df = spark.createDataFrame(value, IntegerType()).toDF(column)
