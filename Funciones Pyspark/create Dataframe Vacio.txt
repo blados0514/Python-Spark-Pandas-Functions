@@ -1,2 +1,5 @@
+
+from pyspark.sql.functions import col
+
 df_test  = spark.createDataFrame([('','')], ['name', 'age'])
 df_test = df_test.filter(col('name_column') != '')
