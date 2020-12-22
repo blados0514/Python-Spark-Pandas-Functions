@@ -1,0 +1,7 @@
+%sh 
+
+cd  /dbfs/mnt/rdh-auditoria-storage/bck-data-lake/rdh-auditoria/results/results/
+
+for x in $(ls);do 
+cp -r $x /dbfs/mnt/rdh-auditoria/results/$x 
+done
