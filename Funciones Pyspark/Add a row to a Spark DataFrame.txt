@@ -1,0 +1,7 @@
+from pyspark.sql.functions import col
+
+df_1  = spark.createDataFrame([('blados','34')], ['name', 'age'])
+df_2 = spark.createDataFrame([['clara', '23']])
+
+df_1 = df_1.unionAll(df_2)
+df_1.show()
