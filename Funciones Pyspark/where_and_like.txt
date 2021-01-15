@@ -1,0 +1,6 @@
+df_table_storage.select(col('partitionkey'), 
+                        col('rowkey'), 
+                        col('timestamp'), 
+                        col('carpetaorigen'), 
+                        col('registros')
+                       ).where(col('carpetaorigen').like('%solicitudinformacion%')).show()
