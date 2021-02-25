@@ -2,10 +2,10 @@ import cx_Oracle
 
 # class connect():
 
-host = 'DESKTOP-K8EPV76'
+host = ''
 port = 1521
 user = 'blados'
-passw = 'hrsblados15c'
+passw = ''
 tsname = 'XE'
 
 try:
